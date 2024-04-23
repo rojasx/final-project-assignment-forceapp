@@ -13,7 +13,7 @@ try:
     while True:
         data = client.recv(1024)
         if data:
-            print(f"Message: {data.decode('utf-8')}", end="\r")
+            print(f"            \Weight: {data.decode('utf-8')}", end="")
 except OSError as e:
     pass
 except KeyboardInterrupt:
