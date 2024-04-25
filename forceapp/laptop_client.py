@@ -24,7 +24,12 @@ try:
     while True:
         data = client.recv(1024).decode('utf-8')
         print(f"            \rWeight: {data}", end="")
+except KeyboardInterrupt:
+    print("\nProgram exited by user.")
 except Exception as e:
-    print(f"Caught Exception: {e}.")
+    print(f"\nCaught Exception: {e}.")
+finally:
     print("Closing socket.")
     client.close()
+
+    
