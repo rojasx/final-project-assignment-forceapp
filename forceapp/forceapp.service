@@ -1,0 +1,13 @@
+[Unit]
+Description=App that handles the force sensor reading and sending.
+After=bluetooth.service
+
+
+[Service]
+Type=forking
+ExecStart=/usr/share/misc/forceapp_startup.sh
+Restart=on-failure
+RestartSec=2s
+
+[Install]
+WantedBy=multi-user.target
