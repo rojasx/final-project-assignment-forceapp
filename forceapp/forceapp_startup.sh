@@ -1,4 +1,5 @@
 #!/bin/sh
+bluetoothctl --agent NoInputNoOutput
 
 bluetoothctl discoverable on
 
