@@ -4,7 +4,7 @@ bluetoothctl agent off
 sleep 1
 bluetoothctl agent NoInputNoOutput
 sleep 1
-bluetoothctl pairable on
+bluetoothctl default-agent
 sleep 1
 bluetoothctl discoverable on
 sleep 1
